@@ -1,0 +1,43 @@
+﻿<Window x:Class="VoronovoStreet.Windows.PreviewStreatInformationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        Icon="\View\Images\gerb.png"
+        mc:Ignorable="d"
+        Title="PreviewStreatInformationWindow" ResizeMode="NoResize" WindowState="Maximized" Background="#FF3A3A3A" Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="gayt" Content="play" Margin="10" Click="gayt_Click_1"/>
+            <Button x:Name="gayst" Content="stop" Click="gayst_Click"/>
+        </StackPanel>
+        
+        <hc:ScrollViewer Grid.Row="1">
+            <StackPanel>
+                <TextBlock x:Name="StreatNameHed" Text="Имя улицы" HorizontalAlignment="Center" Foreground="White" Margin="10" FontSize="32"/>
+                <hc:CoverView VerticalAlignment="Top" Background="#FF3A3A3A" ItemContentHeight="700" ItemsSource="{Binding ImagePaths}">
+                    <hc:CoverView.ItemHeaderTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding}"/>
+                        </DataTemplate>
+                    </hc:CoverView.ItemHeaderTemplate>
+                    <hc:CoverView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="#FF3A3A3A">
+                                <Image Width="1000" Height="1000" Source="{Binding}"/>
+                            </Border>
+                        </DataTemplate>
+                    </hc:CoverView.ItemTemplate>
+                </hc:CoverView>
+                <RichTextBox x:Name="RichTextBoxForInfo" IsReadOnly="True" Background="Transparent">
+                    <FlowDocument Background="Transparent" Foreground="White"/>
+                </RichTextBox>
+            </StackPanel>
+        </hc:ScrollViewer>
+    </Grid>
+</Window>

@@ -1,0 +1,57 @@
+﻿<Window x:Class="VoronovoStreet.Windows.PreviewStreatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        Icon="\View\Images\gerb.png"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d"
+        Title="Просмотр улиц" Height="450" Width="800" ResizeMode="NoResize" WindowState="Maximized" Background="#FF3A3A3A">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="1" Margin="10">
+            <Grid>
+                <TextBox x:Name="textBoxFilter" Background="White" TextChanged="TextBox_TextChanged" Padding="20 0 10 0"/>
+                <materialDesign:PackIcon Kind="MapMarker" VerticalAlignment="Center" Margin="2"/>
+            </Grid>
+            <ListBox ItemsSource="{Binding StreetsList}" 
+                     SelectedItem="{Binding SelectedStreet}"
+                     SelectionChanged="ListBox_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+
+        <m:Map CredentialsProvider="7IHKt7a4nNdvvhLlxguU~TsIy2A3g64JJQ5zkuZEIXA~AnZSUBW9DM7Xq1666-rRwBS0cyfPqQFLmhgrH3MImwmwx2-386qDqukWnKwravox" 
+               Mode="Road" 
+               Grid.Column="1" 
+               Grid.Row="1" 
+               ZoomLevel="10"
+               Center="54.150738, 25.313541" 
+               Language="ru"
+               Margin="10">
+            
+            <m:MapItemsControl ItemsSource="{Binding StreetsList}">
+                <m:MapItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Canvas
+                            m:MapLayer.Position="{Binding Coordinates}"
+                            m:MapLayer.PositionOrigin="BottomCenter" Width="30" Height="30">
+                            <materialDesign:PackIcon Kind="MapMarker" Width="30" Height="30" Foreground="#FF3C3C3C"/>
+                            <Button hc:Poptip.Content="{Binding Name}" hc:Poptip.Placement="Top" Click="Button_Click" Tag="{Binding Name}" Background="Transparent" BorderBrush="Transparent"/>
+                        </Canvas>
+                    </DataTemplate>
+                </m:MapItemsControl.ItemTemplate>
+            </m:MapItemsControl>
+        </m:Map>
+    </Grid>
+</Window>

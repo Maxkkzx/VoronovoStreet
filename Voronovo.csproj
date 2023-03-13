@@ -1,0 +1,145 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <Title>Вороновский район</Title>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Lenina\**" />
+    <Compile Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Rakosovskogo\**" />
+    <Compile Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Stalina\**" />
+    <Compile Remove="bin\Debug\net6.0-windows\Resources\**" />
+    <Compile Remove="obj\**" />
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Lenina\**" />
+    <EmbeddedResource Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Rakosovskogo\**" />
+    <EmbeddedResource Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Stalina\**" />
+    <EmbeddedResource Remove="bin\Debug\net6.0-windows\Resources\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Lenina\**" />
+    <None Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Rakosovskogo\**" />
+    <None Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Stalina\**" />
+    <None Remove="bin\Debug\net6.0-windows\Resources\**" />
+    <None Remove="obj\**" />
+    <None Remove="Resources\**" />
+    <Page Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Lenina\**" />
+    <Page Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Rakosovskogo\**" />
+    <Page Remove="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Stalina\**" />
+    <Page Remove="bin\Debug\net6.0-windows\Resources\**" />
+    <Page Remove="obj\**" />
+    <Page Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="View\Images\gerb.png" />
+    <None Remove="View\Images\History.jpg" />
+    <None Remove="View\Images\Nowss.jpg" />
+    <None Remove="View\Images\ViewStreat.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Ilyena\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Ilyena\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Ilyena\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Ilyena\4.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Karaseva\1.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Karaseva\2.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Karaseva\3.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Karaseva\4.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Rakas\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Rakas\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Rakas\3.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Rakas\4.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Savica\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Savica\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Savica\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Savica\4.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Shaposh\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Shaposh\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Shaposh\3.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Shaposh\4.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Belova\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Belova\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Belova\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Belova\4.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Gorkogo\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Gorkogo\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Gorkogo\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Gorkogo\4.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kirov\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kirov\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kirov\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kirov\4.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\ZoiKos\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\ZoiKos\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Korza\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Korza\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Korza\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Korza\4.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Korza\5.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kulik\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kulik\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Yanis\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Yanis\2.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Yanis\3.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Yanis\4.JPG" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Mick\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Mick\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Mick\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Mick\4.jpg" />
+    <Content Include="bin\Debug\net6.0-windows\VoronovoStreet.deps.json" />
+    <Content Include="bin\Debug\net6.0-windows\VoronovoStreet.runtimeconfig.json" />
+    <Resource Include="View\Images\gerb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\History.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Nowss.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\ViewStreat.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\HandyControl.dll" />
+    <None Include="bin\Debug\net6.0-windows\InfoAbautStreats\PinskHistory\pinskhistory.rtf" />
+    <None Include="bin\Debug\net6.0-windows\MaterialDesignColors.dll" />
+    <None Include="bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll" />
+    <None Include="bin\Debug\net6.0-windows\Microsoft.Expression.Interactions.dll" />
+    <None Include="bin\Debug\net6.0-windows\Microsoft.Maps.MapControl.WPF.dll" />
+    <None Include="bin\Debug\net6.0-windows\VoronovoStreet.dll" />
+    <None Include="bin\Debug\net6.0-windows\VoronovoStreet.exe" />
+    <None Include="bin\Debug\net6.0-windows\VoronovoStreet.pdb" />
+    <None Include="bin\Debug\net6.0-windows\System.Windows.Interactivity.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HandyControls" Version="3.4.2" />
+    <PackageReference Include="MaterialDesignColors" Version="2.0.9" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
+    <PackageReference Include="Microsoft.Maps.MapControl.WPF" Version="1.0.0.3" />
+    <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net6.0-windows\InfoAbautStreats\ForTest\" />
+  </ItemGroup>
+
+</Project>
