@@ -56,7 +56,12 @@ namespace VoronovoStreet.Windows
             StreetsList.Add(new StreetModel { Name = "ул. Советская", Coordinates = new Location(54.150982, 25.318160), Images = GetImageItemsByName("Korza"), Information = GetPathToInfoByName("Korza"), SoundInfo = GetPathToSoundInfoByName("sovet") });
             StreetsList.Add(new StreetModel { Name = "ул. Октябрьская", Coordinates = new Location(54.152782, 25.318570), Images = GetImageItemsByName("Kulik"), Information = GetPathToInfoByName("Kulik"), SoundInfo = GetPathToSoundInfoByName("oktab") });
             StreetsList.Add(new StreetModel { Name = "ул. Семашко", Coordinates = new Location(54.153343, 25.318876), Images = GetImageItemsByName("ZoiKos"), Information = GetPathToInfoByName("ZoiKos"), SoundInfo = GetPathToSoundInfoByName("oktab") });
-            StreetsList.Add(new StreetModel { Name = "ул. Литовчика", Coordinates = new Location(54.151214, 25.314159), Images = GetImageItemsByName("Mick"), Information = GetPathToInfoByName("Mick"), SoundInfo = GetPathToSoundInfoByName("oktab") });
+            StreetsList.Add(new StreetModel { Name = "ул. Литовчика", Coordinates = new Location(54.151214, 25.314159), Images = GetImageItemsByName("Mick"), Information = GetPathToInfoByName("Mick"), SoundInfo = GetPathToSoundInfoByName("litov") });
+            StreetsList.Add(new StreetModel { Name = "ул. Юбилейная", Coordinates = new Location(54.150084, 25.316486), Images = GetImageItemsByName("Belova"), Information = GetPathToInfoByName("Belova"), SoundInfo = GetPathToSoundInfoByName("litov") });
+            StreetsList.Add(new StreetModel { Name = "ул. Канарчика", Coordinates = new Location(54.150392, 25.321403), Images = GetImageItemsByName("Kanar"), Information = GetPathToInfoByName("Kanar"), SoundInfo = GetPathToSoundInfoByName("Kanar") });
+            StreetsList.Add(new StreetModel { Name = "ул. Калинина", Coordinates = new Location(54.151897, 25.321991), Images = GetImageItemsByName("Kalin"), Information = GetPathToInfoByName("Kalin"), SoundInfo = GetPathToSoundInfoByName("Kanar") });
+            StreetsList.Add(new StreetModel { Name = "ул. 1 Мая", Coordinates = new Location(54.152942, 25.321121), Images = GetImageItemsByName("May"), Information = GetPathToInfoByName("May"), SoundInfo = GetPathToSoundInfoByName("May") });
+            StreetsList.Add(new StreetModel { Name = "пер. Калинина", Coordinates = new Location(54.152009, 25.322483), Images = GetImageItemsByName("per"), Information = GetPathToInfoByName("per"), SoundInfo = GetPathToSoundInfoByName("May") });
         }
 
         private string GetPathToInfoByName(string fileName) 
@@ -71,7 +76,7 @@ namespace VoronovoStreet.Windows
 
         private ObservableCollection<string> GetImageItemsByName(string name) 
         {
-            ObservableCollection<string> images = new ObservableCollection<string>();
+                ObservableCollection<string> images = new ObservableCollection<string>();
             string folder = @"InfoAbautStreats/Images/" + name;
             foreach (var pathToPhoto in Directory.GetFiles(folder))
             {

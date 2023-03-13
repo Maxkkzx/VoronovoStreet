@@ -52,6 +52,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Fedotovo\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Fedotovo\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Fedotovo\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Fedotovo\4.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Ilyena\1.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Ilyena\2.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Ilyena\3.jpg" />
@@ -73,9 +77,6 @@
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Shaposh\3.JPG" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Shaposh\4.JPG" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Belova\1.jpg" />
-    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Belova\2.jpg" />
-    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Belova\3.jpg" />
-    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Belova\4.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Gorkogo\1.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Gorkogo\2.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Gorkogo\3.jpg" />
@@ -101,6 +102,12 @@
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Mick\2.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Mick\3.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Mick\4.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kanar\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kanar\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\per\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\per\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\per\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\per\4.jpg" />
     <Content Include="bin\Debug\net6.0-windows\VoronovoStreet.deps.json" />
     <Content Include="bin\Debug\net6.0-windows\VoronovoStreet.runtimeconfig.json" />
     <Resource Include="View\Images\gerb.png">
