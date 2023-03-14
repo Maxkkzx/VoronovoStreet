@@ -1,4 +1,8 @@
 # VoronovoStreets
+Welcome window:
+
+![изображение](https://user-images.githubusercontent.com/105167571/224942203-69e5b6db-108e-480a-a414-2ff823410436.png)
+
 Main Window:
 
 ![Main Window](https://user-images.githubusercontent.com/105167571/224819897-15ce71fd-85a3-4b51-8a80-771856285cc4.png)
