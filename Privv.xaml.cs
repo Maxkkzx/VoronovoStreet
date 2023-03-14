@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using VoronovoStreet;
 
 namespace Voronovo
 {
@@ -22,6 +23,33 @@ namespace Voronovo
         public Privv()
         {
             InitializeComponent();
+
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            mediaElement1.Pause();
+            new MainWindow().ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            mediaElement1.Pause();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            mediaElement1.Play();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void mediaElement1_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            new MainWindow().ShowDialog();
         }
     }
 }

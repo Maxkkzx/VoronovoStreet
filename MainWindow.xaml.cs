@@ -26,7 +26,6 @@ namespace VoronovoStreet
             InitializeComponent();
         }
 
-
         private void PreviewStrerButton_Click(object sender, RoutedEventArgs e)
         {
             new PreviewStreatWindow().ShowDialog();
