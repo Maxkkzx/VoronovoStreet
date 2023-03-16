@@ -113,6 +113,11 @@
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\May\2.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kalin\1.jpg" />
     <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Kalin\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Zab\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Zab\2.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Zab\3.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Shaur\1.jpg" />
+    <Resource Include="bin\Debug\net6.0-windows\InfoAbautStreats\Images\Shaur\2.jpg" />
     <Content Include="bin\Debug\net6.0-windows\VoronovoStreet.deps.json" />
     <Content Include="bin\Debug\net6.0-windows\VoronovoStreet.runtimeconfig.json" />
     <Resource Include="View\Images\gerb.png">
