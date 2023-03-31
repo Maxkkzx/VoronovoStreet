@@ -3,7 +3,6 @@ Welcome window:
 
 ![изображение](https://user-images.githubusercontent.com/105167571/229182149-a0a66cad-e28b-4a3c-9a38-05e8c967b788.png)
 
-
 Main Window:
 
 ![Main Window](https://user-images.githubusercontent.com/105167571/224819897-15ce71fd-85a3-4b51-8a80-771856285cc4.png)
