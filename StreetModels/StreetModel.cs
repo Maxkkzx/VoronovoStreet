@@ -13,7 +13,6 @@ namespace VoronovoStreet.StreetModels
         public Location Coordinates { get; set; }
         public string Information { get; set; }
         public ObservableCollection<string> Images { get; set; }
-        public string SoundInfo { get; set; }
 
     }
 }

@@ -12,11 +12,8 @@
             <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button x:Name="gayt" Content="play" Margin="10" Click="gayt_Click_1"/>
-            <Button x:Name="gayst" Content="stop" Click="gayst_Click"/>
-        </StackPanel>
-        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+
         <hc:ScrollViewer Grid.Row="1">
             <StackPanel>
                 <TextBlock x:Name="StreatNameHed" Text="Имя улицы" HorizontalAlignment="Center" Foreground="White" Margin="10" FontSize="32"/>

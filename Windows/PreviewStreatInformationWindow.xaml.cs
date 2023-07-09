@@ -25,7 +25,6 @@ namespace VoronovoStreet.Windows
             Title = street.Name;
             ImagePaths = street.Images;
             LoadDocx(street.Information);
-            SoundInfoToPlay = street.SoundInfo;
         }
 
         private void LoadDocx(string path)
@@ -41,22 +40,9 @@ namespace VoronovoStreet.Windows
             }
         }
 
-        SoundPlayer player = new SoundPlayer();
-        private void gayt_Click_1(object sender, RoutedEventArgs e)
-        {
-            player.SoundLocation = SoundInfoToPlay;
-            player.Load();
-            player.PlayLooping();
-        }
-
-        private void gayst_Click(object sender, RoutedEventArgs e)
-        {
-            player.Stop();
-        }
-
         private void Window_Closed(object sender, System.EventArgs e)
         {
-            player.Stop();
+            
         }
     }
 }

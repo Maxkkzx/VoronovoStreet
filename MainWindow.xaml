@@ -22,14 +22,15 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
+            
             <Button Name="PreviewStrerButton"
                     Click="PreviewStrerButton_Click"
                     Grid.Row="0" 
-                    Margin="24,24,-278,18"
+                    Margin="24,22,-284,22"
                     Style="{DynamicResource RoundedButtonStyle}" Grid.RowSpan="2">
 
                 <Grid>
-                    <Rectangle RadiusX="30" RadiusY="20" Margin="-210,-170,-211,-170">
+                    <Rectangle RadiusX="30" RadiusY="20" Margin="-197,-151,-197,-151">
                         <Rectangle.Fill>
                             <ImageBrush ImageSource="\View\Images\ViewStreat.jpg"/>
                         </Rectangle.Fill>
@@ -38,6 +39,8 @@
                     <TextBlock Text="ПРОСМОТР УЛИЦ" Foreground="White" FontSize="40"/>
                 </Grid>
             </Button>
+            
+            
 
             <Grid Grid.Row="1" RenderTransformOrigin="0.488,0.507">
                 <Grid.ColumnDefinitions>
@@ -47,4 +50,5 @@
             </Grid>
         </Grid>
     </Grid>
+    
 </Window>
